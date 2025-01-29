@@ -46,64 +46,63 @@ jobs:
         run: |
           df -h
           sudo apt-get remove aria2 azure-cli shellcheck rpm xorriso zsync \
-               clang-12 lld-12 clang-format-12 \
-               clang-13 lld-13 clang-format-13 \
-               clang-14 lld-14 clang-format-14 \
+               clang-16 lld-16 clang-format-16 \
+               clang-17 lld-17 clang-format-17 \
                g++-9 g++-10 g++-12 g++-11 gfortran-9 gfortran-10 gfortran-11 google-chrome-stable \
                google-cloud-sdk \
                imagemagick \
                libmagickcore-dev libmagickwand-dev libmagic-dev ant ant-optional \
                mercurial apt-transport-https mono-complete mysql-client libmysqlclient-dev \
-               mysql-server mssql-tools unixodbc-dev yarn libssl-dev \
+               mysql-server unixodbc-dev yarn libssl-dev \
                libfreetype6 libfreetype6-dev libfontconfig1 libfontconfig1-dev \
                php-common \
                php-pear \
-               php8.1 \
-               php8.1-amqp \
-               php8.1-apcu \
-               php8.1-bcmath \
-               php8.1-bz2 \
-               php8.1-cgi \
-               php8.1-cli \
-               php8.1-common \
-               php8.1-curl \
-               php8.1-dba \
-               php8.1-dev \
-               php8.1-enchant \
-               php8.1-fpm \
-               php8.1-gd \
-               php8.1-gmp \
-               php8.1-igbinary \
-               php8.1-imagick \
-               php8.1-imap \
-               php8.1-interbase \
-               php8.1-intl \
-               php8.1-ldap \
-               php8.1-mbstring \
-               php8.1-memcache \
-               php8.1-memcached \
-               php8.1-mongodb \
-               php8.1-msgpack \
-               php8.1-mysql \
-               php8.1-odbc \
-               php8.1-opcache \
-               php8.1-pcov \
-               php8.1-pgsql \
-               php8.1-phpdbg \
-               php8.1-pspell \
-               php8.1-readline \
-               php8.1-redis \
-               php8.1-snmp \
-               php8.1-soap \
-               php8.1-sqlite3 \
-               php8.1-sybase \
-               php8.1-tidy \
-               php8.1-xdebug \
-               php8.1-xml \
-               php8.1-xsl \
-               php8.1-yaml \
-               php8.1-zip \
-               php8.1-zmq \
+               php8.3 \
+               php8.3-amqp \
+               php8.3-apcu \
+               php8.3-bcmath \
+               php8.3-bz2 \
+               php8.3-cgi \
+               php8.3-cli \
+               php8.3-common \
+               php8.3-curl \
+               php8.3-dba \
+               php8.3-dev \
+               php8.3-enchant \
+               php8.3-fpm \
+               php8.3-gd \
+               php8.3-gmp \
+               php8.3-igbinary \
+               php8.3-imagick \
+               php8.3-imap \
+               php8.3-interbase \
+               php8.3-intl \
+               php8.3-ldap \
+               php8.3-mbstring \
+               php8.3-memcache \
+               php8.3-memcached \
+               php8.3-mongodb \
+               php8.3-msgpack \
+               php8.3-mysql \
+               php8.3-odbc \
+               php8.3-opcache \
+               php8.3-pcov \
+               php8.3-pgsql \
+               php8.3-phpdbg \
+               php8.3-pspell \
+               php8.3-readline \
+               php8.3-redis \
+               php8.3-snmp \
+               php8.3-soap \
+               php8.3-sqlite3 \
+               php8.3-sybase \
+               php8.3-tidy \
+               php8.3-xdebug \
+               php8.3-xml \
+               php8.3-xsl \
+               php8.3-yaml \
+               php8.3-zip \
+               php8.3-zmq \
                snmp pollinate libpq-dev powershell ruby-full nginx shim-signed \
                libnginx-mod-http-image-filter libmono-system-web4.0-cil monodoc-http \
                sphinxsearch subversion -yq --allow-remove-essential
