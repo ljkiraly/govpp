@@ -18,13 +18,6 @@ jobs:
         repository:
           - sdk-vpp
           - cmd-forwarder-vpp
-          - cmd-nse-vlan-vpp
-          - cmd-nse-vl3-vpp
-          - cmd-nse-firewall-vpp
-          - cmd-nsc-vpp
-          - cmd-nse-icmp-responder-vpp
-          - cmd-nsc-simple-docker
-          - cmd-nse-simple-vl3-docker
     name: Update ${{ matrix.repository }}
     runs-on: ubuntu-latest
     steps:
@@ -50,17 +43,17 @@ jobs:
           echo "$LOG_MSG" >> /tmp/commit-message
           echo "Commit Message:"
           cat /tmp/commit-message
-      - name: Checkout networkservicemesh/${{ matrix.repository }}
+      - name: Checkout ljkiraly/${{ matrix.repository }}
         uses: actions/checkout@v2
         with:
-          path: networkservicemesh/${{ matrix.repository }}
-          repository: networkservicemesh/${{ matrix.repository }}
+          path: ljkiraly/${{ matrix.repository }}
+          repository: ljkiraly/${{ matrix.repository }}
           token: ${{ secrets.token }}
       - uses: actions/setup-go@v4
         with:
           go-version: 1.20.8
       - name: Update ${{ matrix.repository }} locally
-        working-directory: networkservicemesh/${{ matrix.repository }}
+        working-directory: ljkiraly/${{ matrix.repository }}
         run: |
           set +e
           has_dep=$(grep "github.com/${{ github.repository }}" go.mod | grep -v "// indirect" -c)
@@ -78,7 +71,7 @@ jobs:
           find: "VPP_VERSION=.*"
           replace: "VPP_VERSION=${{ inputs.docker_tag }}"
       - name: Push update to the ${{ matrix.repository }}
-        working-directory: networkservicemesh/${{ matrix.repository }}
+        working-directory: ljkiraly/${{ matrix.repository }}
         run: |
           echo Starting to update repositotry ${{ matrix.repository }}
           git config --global user.email "nsmbot@networkservicmesh.io"

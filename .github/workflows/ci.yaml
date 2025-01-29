@@ -158,8 +158,8 @@ jobs:
     name: update_dependent_repositories
     needs: build
     if: ${{ github.event_name == 'push' }}
-    uses: networkservicemesh/govpp/.github/workflows/update-dependent-repositories.yaml@main
+    uses: ljkiraly/govpp/.github/workflows/update-dependent-repositories.yaml@main
     with:
       docker_tag: ${{ needs.build.outputs.docker_tag }}
     secrets:
-      token: ${{ secrets.NSM_BOT_GITHUB_TOKEN }}
+      token: ${{ secrets.BOT_TOKEN }}
