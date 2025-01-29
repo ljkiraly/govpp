@@ -11,7 +11,7 @@
 package mdata
 
 import (
-	_ "github.com/networkservicemesh/govpp/binapi/interface_types"
+	_ "github.com/ljkiraly/govpp/binapi/interface_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

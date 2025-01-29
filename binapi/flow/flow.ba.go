@@ -11,10 +11,10 @@
 package flow
 
 import (
-	_ "github.com/networkservicemesh/govpp/binapi/ethernet_types"
-	flow_types "github.com/networkservicemesh/govpp/binapi/flow_types"
-	_ "github.com/networkservicemesh/govpp/binapi/interface_types"
-	_ "github.com/networkservicemesh/govpp/binapi/ip_types"
+	_ "github.com/ljkiraly/govpp/binapi/ethernet_types"
+	flow_types "github.com/ljkiraly/govpp/binapi/flow_types"
+	_ "github.com/ljkiraly/govpp/binapi/interface_types"
+	_ "github.com/ljkiraly/govpp/binapi/ip_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

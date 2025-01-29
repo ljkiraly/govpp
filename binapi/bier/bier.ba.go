@@ -12,8 +12,8 @@
 package bier
 
 import (
-	fib_types "github.com/networkservicemesh/govpp/binapi/fib_types"
-	_ "github.com/networkservicemesh/govpp/binapi/ip_types"
+	fib_types "github.com/ljkiraly/govpp/binapi/fib_types"
+	_ "github.com/ljkiraly/govpp/binapi/ip_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

@@ -16,7 +16,7 @@ package punt
 import (
 	"strconv"
 
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

@@ -1,4 +1,4 @@
-module github.com/networkservicemesh/govpp
+module github.com/ljkiraly/govpp
 
 go 1.20
 

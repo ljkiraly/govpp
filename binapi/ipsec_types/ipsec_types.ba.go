@@ -14,9 +14,9 @@ package ipsec_types
 import (
 	"strconv"
 
-	_ "github.com/networkservicemesh/govpp/binapi/interface_types"
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
-	tunnel_types "github.com/networkservicemesh/govpp/binapi/tunnel_types"
+	_ "github.com/ljkiraly/govpp/binapi/interface_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
+	tunnel_types "github.com/ljkiraly/govpp/binapi/tunnel_types"
 	api "go.fd.io/govpp/api"
 )
 

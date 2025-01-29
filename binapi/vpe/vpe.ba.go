@@ -11,7 +11,7 @@
 package vpe
 
 import (
-	vpe_types "github.com/networkservicemesh/govpp/binapi/vpe_types"
+	vpe_types "github.com/ljkiraly/govpp/binapi/vpe_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

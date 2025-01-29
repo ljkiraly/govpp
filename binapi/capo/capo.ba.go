@@ -16,8 +16,8 @@ package capo
 import (
 	"strconv"
 
-	_ "github.com/networkservicemesh/govpp/binapi/fib_types"
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
+	_ "github.com/ljkiraly/govpp/binapi/fib_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

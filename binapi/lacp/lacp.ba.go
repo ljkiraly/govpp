@@ -11,8 +11,8 @@
 package lacp
 
 import (
-	ethernet_types "github.com/networkservicemesh/govpp/binapi/ethernet_types"
-	interface_types "github.com/networkservicemesh/govpp/binapi/interface_types"
+	ethernet_types "github.com/ljkiraly/govpp/binapi/ethernet_types"
+	interface_types "github.com/ljkiraly/govpp/binapi/interface_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

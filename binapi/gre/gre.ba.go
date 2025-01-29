@@ -15,9 +15,9 @@ package gre
 import (
 	"strconv"
 
-	interface_types "github.com/networkservicemesh/govpp/binapi/interface_types"
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
-	tunnel_types "github.com/networkservicemesh/govpp/binapi/tunnel_types"
+	interface_types "github.com/ljkiraly/govpp/binapi/interface_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
+	tunnel_types "github.com/ljkiraly/govpp/binapi/tunnel_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

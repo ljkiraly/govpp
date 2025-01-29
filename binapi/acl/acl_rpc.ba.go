@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	memclnt "github.com/networkservicemesh/govpp/binapi/memclnt"
+	memclnt "github.com/ljkiraly/govpp/binapi/memclnt"
 	api "go.fd.io/govpp/api"
 )
 

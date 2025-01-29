@@ -11,9 +11,9 @@
 package nat64
 
 import (
-	interface_types "github.com/networkservicemesh/govpp/binapi/interface_types"
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
-	nat_types "github.com/networkservicemesh/govpp/binapi/nat_types"
+	interface_types "github.com/ljkiraly/govpp/binapi/interface_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
+	nat_types "github.com/ljkiraly/govpp/binapi/nat_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

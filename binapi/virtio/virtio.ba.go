@@ -14,9 +14,9 @@ package virtio
 import (
 	"strconv"
 
-	ethernet_types "github.com/networkservicemesh/govpp/binapi/ethernet_types"
-	interface_types "github.com/networkservicemesh/govpp/binapi/interface_types"
-	pci_types "github.com/networkservicemesh/govpp/binapi/pci_types"
+	ethernet_types "github.com/ljkiraly/govpp/binapi/ethernet_types"
+	interface_types "github.com/ljkiraly/govpp/binapi/interface_types"
+	pci_types "github.com/ljkiraly/govpp/binapi/pci_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

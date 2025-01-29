@@ -14,8 +14,8 @@ package acl_types
 import (
 	"strconv"
 
-	ethernet_types "github.com/networkservicemesh/govpp/binapi/ethernet_types"
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
+	ethernet_types "github.com/ljkiraly/govpp/binapi/ethernet_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
 	api "go.fd.io/govpp/api"
 )
 

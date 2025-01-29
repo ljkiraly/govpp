@@ -12,10 +12,10 @@
 package lisp_gpe
 
 import (
-	_ "github.com/networkservicemesh/govpp/binapi/ethernet_types"
-	interface_types "github.com/networkservicemesh/govpp/binapi/interface_types"
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
-	lisp_types "github.com/networkservicemesh/govpp/binapi/lisp_types"
+	_ "github.com/ljkiraly/govpp/binapi/ethernet_types"
+	interface_types "github.com/ljkiraly/govpp/binapi/interface_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
+	lisp_types "github.com/ljkiraly/govpp/binapi/lisp_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

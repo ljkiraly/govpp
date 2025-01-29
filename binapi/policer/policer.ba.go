@@ -11,8 +11,8 @@
 package policer
 
 import (
-	interface_types "github.com/networkservicemesh/govpp/binapi/interface_types"
-	policer_types "github.com/networkservicemesh/govpp/binapi/policer_types"
+	interface_types "github.com/ljkiraly/govpp/binapi/interface_types"
+	policer_types "github.com/ljkiraly/govpp/binapi/policer_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

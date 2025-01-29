@@ -11,9 +11,9 @@
 package ikev2
 
 import (
-	ikev2_types "github.com/networkservicemesh/govpp/binapi/ikev2_types"
-	interface_types "github.com/networkservicemesh/govpp/binapi/interface_types"
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
+	ikev2_types "github.com/ljkiraly/govpp/binapi/ikev2_types"
+	interface_types "github.com/ljkiraly/govpp/binapi/interface_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )

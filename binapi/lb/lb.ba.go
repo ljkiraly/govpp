@@ -11,9 +11,9 @@
 package lb
 
 import (
-	interface_types "github.com/networkservicemesh/govpp/binapi/interface_types"
-	ip_types "github.com/networkservicemesh/govpp/binapi/ip_types"
-	lb_types "github.com/networkservicemesh/govpp/binapi/lb_types"
+	interface_types "github.com/ljkiraly/govpp/binapi/interface_types"
+	ip_types "github.com/ljkiraly/govpp/binapi/ip_types"
+	lb_types "github.com/ljkiraly/govpp/binapi/lb_types"
 	api "go.fd.io/govpp/api"
 	codec "go.fd.io/govpp/codec"
 )
