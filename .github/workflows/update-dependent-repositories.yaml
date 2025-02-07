@@ -6,6 +6,9 @@ on:
       docker_tag:
         type: string
         required: true
+      mod_hash:
+        type: string
+        required: true
     secrets:
       token:
         required: true
@@ -35,7 +38,7 @@ jobs:
       - name: Create commit message
         working-directory: ${{ github.repository }}
         run: |
-          echo "Update go.mod and go.sum to latest version from ${{ github.repository }}@${{ inputs.docker_tag }}" >> /tmp/commit-message
+          echo "Update go.mod and go.sum to latest version from ${{ github.repository }}@${{ inputs.mod_hash }}" >> /tmp/commit-message
           echo "PR link: https://github.com/${{ github.repository }}/pull/${{ steps.findPr.outputs.pr }}" >> /tmp/commit-message
           echo "" >> /tmp/commit-message
           LOG_MSG=$(git log --date=iso --pretty='format:Commit: %h%nAuthor: %an%nDate: %ad%nMessage:%n  - %B%n' -1 | sed '/^$/d;$d')
@@ -62,7 +65,7 @@ jobs:
             exit 0
           fi
 
-          go get -u github.com/${{ github.repository }}@${{ inputs.docker_tag }}
+          go get -u github.com/${{ github.repository }}@${{ inputs.mod_hash }}
           go mod tidy
           git diff
       - name: Find and Replace version
