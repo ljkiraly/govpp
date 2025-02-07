@@ -180,6 +180,6 @@ jobs:
     if: ${{ github.event_name == 'push' }}
     uses: ljkiraly/govpp/.github/workflows/update-dependent-repositories.yaml@main
     with:
-      docker_tag: ${{ needs.build.outputs.docker_tag }}
+      docker_tag: ${{ needs.docker_push.outputs.docker_tag }}
     secrets:
       token: ${{ secrets.BOT_TOKEN }}
