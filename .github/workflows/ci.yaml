@@ -131,10 +131,11 @@ jobs:
           else
             VPP_VERSION=$(docker run vpp:version)
             TAG=v${VPP_VERSION/\~/-}
-            HASH=main
+            HASH="main"
           fi
 
           echo "TAG=${TAG}" >> $GITHUB_ENV
+          echo "HASH=${HASH}" >> $GITHUB_ENV
       - name: Generate files
         run: go generate ./...
       - name: Check for changes in generated code
